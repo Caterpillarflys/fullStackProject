@@ -1,0 +1,36 @@
+查询
+    接口地址：/api/search
+    返回格式：json
+    请求方式：get
+    参数：无
+删除
+    接口地址：/api/del
+    返回格式：json
+    请求方式：post
+    参数：a 下标
+修改
+    接口地址：/api/change
+    返回格式：json
+    请求方式：post
+    参数：a、b、c、d、e  名字、性别、手机号、出生日期、下标
+增加
+    接口地址：/api/add
+    返回格式：json
+    请求方式：post
+    参数：a、b、c、d  名字、性别、手机号、出生日期
+
+
+mysql表
+    字段          非空      类型          说明          主键        
+    id            Y        int          序列号         Y(需自增)
+    name          Y        varchar      姓名
+    gender        Y        varchar      性别
+    phoneNumber   Y        varchar      手机号
+    birthday      Y        varchar      出生日期
+
+
+需要用到的：
+    数据库：mysql
+    后端：nodejs  express  mysqljs(node数据库模块)  body-parser中间件
+    前端: vue  elment-ui axios 
+    
